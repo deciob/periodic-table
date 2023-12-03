@@ -21,8 +21,8 @@ const data = periodicTableData.elements
 data.map((item) => {
   const html = `
     <div class='cell' style='grid-column: ${item.xpos}; grid-row: ${item.ypos};' title='${item.name}'>
-      <div class='symbol'>${item.symbol}</div>
-      <div class='number'>${item.number}</div>
+      <div class='symbol'><div>${item.symbol}</div></div>
+      <div class='number'><div>${item.number}</div></div>
     </div>
   `;
   container.innerHTML += html;

@@ -21,17 +21,24 @@ body {
 .cell {
   border: 1px solid #aaa;
   height: 60px;
-  display: grid;
-  grid-template-rows: 2fr 1fr;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .symbol {
-  align-self: center;
+  flex: 2;
   font-size: 16px;
   font-weight: 600;
+  background: #fff9ee;
 }
 
 .number {
+  flex: 1;
   font-size: 14px;
+}
+
+.symbol,
+.number {
+  display: grid;
+  place-content: center;
 }
