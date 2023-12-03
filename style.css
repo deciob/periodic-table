@@ -23,19 +23,22 @@ body {
   height: 60px;
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
 
 .symbol {
   flex: 2;
   font-size: 16px;
   font-weight: 600;
-  padding-top: 10px;
-  background: #fee;
+  background: #fff9ee;
 }
 
 .number {
   flex: 1;
   font-size: 14px;
-  padding-top: 5px;
+}
+
+.symbol,
+.number {
+  display: grid;
+  place-content: center;
 }
