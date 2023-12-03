@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 5px;
+  width: 90%;
+  margin: 20px;
+}
+
+.cell {
+  border: 1px solid #aaa;
+  height: 60px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  justify-items: center;
+}
+
+.symbol {
+  align-self: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.number {
+  font-size: 14px;
+}
